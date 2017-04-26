@@ -1,3 +1,19 @@
+<?php
+
+    session_start();
+
+    spl_autoload_register(function ($class) {
+        include_once("classes/" . $class . ".class.php");
+    });
+
+    if(isset($_POST['submit'])){
+        //haal alle checked values op
+        //in database steken
+        //linken aan id? vak?
+    }
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,15 +34,25 @@
 
         <h1>Voorkeuren</h1>
 
-        <p>Kies je voorkeuren</p>
+        <p>Deelnemen aan</p>
 
         <form action="" method="post">
             
-            <div>
-                <input type="checkbox"> Zingen <br>
-                <input type="checkbox"> Wave <br>
-                <input type="checkbox"> Dansen <br>
-                <input type="checkbox"> Drinken
+            <div class="voorkeuren">
+                <input type="checkbox" id="zingen" value="zingen" name="voorkeuren">
+                <label for="zingen" class="btn">Clublied zingen</label>
+
+                <input type="checkbox" id="wave" value="wave" name="voorkeuren">
+                <label for="wave" class="btn">Wave starten</label>
+
+                <input type="checkbox" id="springen" value="springen" name="voorkeuren">
+                <label for="springen" class="btn">Springen</label>
+
+                <input type="checkbox" id="drinken" value="drinken" name="voorkeuren">
+                <label for="drinken" class="btn">Pintje drinken</label>
+
+                <input type="checkbox" id="klappen" value="klappen" name="voorkeuren">
+                <label for="klappen" class="btn">Klappen</label>
             </div>
 
             <button type="submit">Opslaan</button>

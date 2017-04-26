@@ -5,11 +5,16 @@
         include_once("classes/" . $class . ".class.php");
     });
 
-    if(isset($_POST["ja"])){
-        $supporter = new Vak();
-        $supporter->vak = $_SESSION['vak'];
-        $supporter->saveVak();
-        //header('Location: voorkeuren.php');
+    try {
+        if (isset($_POST["ja"])) {
+            $supporter = new Vak();
+            $supporter->vak = $_SESSION['vak'];
+            $supporter->MACadres = $_SERVER['REMOTE_ADDR'];
+            $supporter->saveVak();
+            header('Location: voorkeuren.php');
+        }
+    } catch(Exception $e){
+        $error = $e->getMessage();
     }
 
     if(isset($_POST["nee"])){
@@ -30,6 +35,7 @@
     <title>Superfan</title>
 </head>
 <body>
+<?php if(isset($error)){ echo $error; }; ?>
 
 <div class="container">
     <div class="red-banner"></div>
