@@ -29,5 +29,14 @@
             }
         }
 
+        public function saveVak(){
+            //connectie
+            //statement -> query
+            //statement bindvalue
+            //statement execute
+            //session id
+            //return
+        }
+
 
     }
