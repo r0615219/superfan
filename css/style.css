@@ -1,0 +1,64 @@
+/*
+
+GELE KLEUR : #F3D370
+RODE KLEUR : #E34A47
+
+ */
+
+
+body{
+    background-color: gainsboro;
+    font-family: sans-serif;
+}
+
+.container{
+    display: block;
+    min-width:300px;
+    max-width: 850px;
+    height: 100vh;
+    background-color: white;
+    margin: 0px auto;
+}
+
+.content{
+    display: block;
+    width:100%;
+    height:80vh;
+    background-color: white;
+    text-align: center;
+}
+
+.red-banner{
+    display: block;
+    width:100%;
+    height:10vh;
+    background-color: #E34A47;
+}
+
+.red-banner .logo{
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 82vh;
+    border: 3px dashed #F3D370;
+    box-sizing: border-box;
+}
+
+.btn-square{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #F3D370;
+    margin:10px auto;
+    border-radius: 15px;
+    color: white;
+    box-sizing: border-box;
+    padding:15px;
+}
