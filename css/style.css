@@ -69,12 +69,12 @@ body{
     font-weight: bold;
 }
 
-/* - - -  Modal pop-up keuze supportersvak - - - */
-#kiesVak .modal-header, #kiesVak .modal-footer{
+.modal-header, .modal-footer{
     background-color: #E34A47;
     color: white;
 }
 
+/* - - -  Modal pop-up keuze supportersvak - - - */
 #kiesVak .modal-body .vakken{
     display: flex;
     flex-direction: row;

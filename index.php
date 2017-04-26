@@ -41,11 +41,11 @@
 
         <h1>Welkom</h1>
 
-        <p>Connecteer met jouw supportersvak via wifi of QR-code</p>
+        <p>Connecteer met jouw supportersvak via QR-code of ...</p>
 
-        <a href="#" class="connect">wifi</a>
+        <!--<a href="#" class="connect">wifi</a>
 
-        <p>of</p>
+        <p>of</p>-->
 
         <a href="#" data-toggle="modal" data-target="#QRinfo">QR Code</a>
 
@@ -68,6 +68,15 @@
                 <div class="modal-body">
                     <p>Open QR reader applicatie op je smartphone. <br>
                     Scan de QR code op de affiche in jouw supportersvak.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        A adipisci asperiores aut, ex excepturi harum id incidunt ipsa ipsum iste nemo
+                        nostrum quasi repellat sit voluptatem? Debitis et fuga quos.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        A adipisci asperiores aut, ex excepturi harum id incidunt ipsa ipsum iste nemo
+                        nostrum quasi repellat sit voluptatem? Debitis et fuga quos.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        A adipisci asperiores aut, ex excepturi harum id incidunt ipsa ipsum iste nemo
+                        nostrum quasi repellat sit voluptatem? Debitis et fuga quos.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" data-dismiss="modal">Oké</button>
@@ -91,61 +100,6 @@
                     <p>Kies een supportersvak</p>
                     <form action="" method="post">
                         <div class="vakken">
-                            <!--<label for="A">
-                                <input type="radio" name="vak"  value="A" id="A">A
-                            </label>
-                            <label for="B">
-                                <input type="radio" name="vak"  value="B" id="B">B
-                            </label>
-                            <label for="C">
-                                <input type="radio" name="vak"  value="C" id="C">C
-                            </label>
-                            <label for="D">
-                                <input type="radio" name="vak"  value="D" id="D">D
-                            </label>
-                            <label for="E1">
-                                <input type="radio" name="vak"  value="E1" id="E1">E1
-                            </label>
-                            <label for="E2">
-                                <input type="radio" name="vak"  value="E2" id="E2">E2
-                            </label>
-                            <label for="E3">
-                                <input type="radio" name="vak"  value="E3" id="E3">E3
-                            </label>
-                            <label for="F">
-                                <input type="radio" name="vak"  value="F" id="F">F
-                            </label>
-                            <label for="G">
-                                <input type="radio" name="vak"  value="G" id="G">G
-                            </label>
-                            <label for="H1">
-                                <input type="radio" name="vak"  value="H1" id="H1">H1
-                            </label>
-                            <label for="H2">
-                                <input type="radio" name="vak"  value="H2" id="H2">H2
-                            </label>
-                            <label for="H3">
-                                <input type="radio" name="vak"  value="H3" id="H3">H3
-                            </label>
-                            <label for="H4">
-                                <input type="radio" name="vak"  value="H4" id="H4">H4
-                            </label>
-                            <label for="H5">
-                                <input type="radio" name="vak"  value="H5" id="H5">H5
-                            </label>
-                            <label for="I">
-                                <input type="radio" name="vak"  value="I" id="I">I
-                            </label>
-                            <label for="J">
-                                <input type="radio" name="vak"  value="J" id="J">J
-                            </label>
-                            <label for="K1">
-                                <input type="radio" name="vak"  value="K1" id="K1">K1
-                            </label>
-                            <label for="K2">
-                                <input type="radio" name="vak"  value="K2" id="K2">K2
-                            </label>-->
-
                             <input type="radio" id="A" value="A" name="vak">
                             <label for="A" class="btn">A</label>
 
