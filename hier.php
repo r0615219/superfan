@@ -1,5 +1,21 @@
 <?php
     session_start();
+
+    spl_autoload_register(function ($class) {
+        include_once("classes/" . $class . ".class.php");
+    });
+
+    if(isset($_POST["ja"])){
+        $supporter = new Vak();
+        $supporter->vak = $_SESSION['vak'];
+        $supporter->saveVak();
+        //header('Location: voorkeuren.php');
+    }
+
+    if(isset($_POST["nee"])){
+        session_destroy();
+        header('Location: index.php');
+    }
 ?>
 
 <!doctype html>
@@ -26,9 +42,13 @@
 
         <div class="btn-square"><p><?php echo $_SESSION['vak']; ?></p></div>
 
-        <a href="voorkeuren.php">V</a>
+        <form action="" method="post">
 
-        <a href="index.php">X</a>
+            <button type="submit" name="ja" id="btn-ja">V</button>
+
+            <button type="submit" name="nee" id="btn-nee">X</button>
+
+        </form>
 
 
     </div>

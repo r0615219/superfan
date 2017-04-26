@@ -58,7 +58,61 @@ body{
     background-color: #F3D370;
     margin:10px auto;
     border-radius: 15px;
+    box-sizing: border-box;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.btn-square p{
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* - - -  Modal pop-up keuze supportersvak - - - */
+#kiesVak .modal-header, #kiesVak .modal-footer{
+    background-color: #E34A47;
+    color: white;
+}
+
+#kiesVak .modal-body .vakken{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#kiesVak .modal-body input[type=radio]{display: none;}
+
+#kiesVak .modal-body input[type=radio] + label {
+    display: block;
+    width: 65px;
+    height: 65px;
+    background-color: #F3D370;
+    border-radius: 10px;
     color: white;
     box-sizing: border-box;
-    padding:15px;
+    margin:10px;
+    text-align: center;
+    padding: 15px;
+    font-size: 2em;
+    font-weight: bold;
 }
+
+#kiesVak .modal-body input[type=radio]:checked + label {
+    background-color: #f7e19f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
