@@ -30,8 +30,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+
     <title>Superfan</title>
 </head>
 <body>
@@ -42,7 +46,7 @@
 
     <div class="content">
 
-        <h1>Check</h1>
+        <h1>C h e c k !</h1>
 
         <p>Supporter je in dit vak?</p>
 
@@ -60,7 +64,7 @@
     </div>
 
     <div class="red-banner">
-        <div class="logo"></div>
+        <div class="logo"><img src="img/LogoSuperfan-01.png" alt="logo"></div>
     </div>
 </div>
 

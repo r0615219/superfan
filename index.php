@@ -82,18 +82,9 @@
                 <div class="modal-body">
                     <p>Open QR reader applicatie op je smartphone. <br>
                     Scan de QR code op de affiche in jouw supportersvak.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        A adipisci asperiores aut, ex excepturi harum id incidunt ipsa ipsum iste nemo
-                        nostrum quasi repellat sit voluptatem? Debitis et fuga quos.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        A adipisci asperiores aut, ex excepturi harum id incidunt ipsa ipsum iste nemo
-                        nostrum quasi repellat sit voluptatem? Debitis et fuga quos.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        A adipisci asperiores aut, ex excepturi harum id incidunt ipsa ipsum iste nemo
-                        nostrum quasi repellat sit voluptatem? Debitis et fuga quos.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" data-dismiss="modal">Oké</button>
+                    <button type="button" data-dismiss="modal" id="vak-submit">Oké</button>
                 </div>
             </div>
 
@@ -172,7 +163,6 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" data-dismiss="modal">Annuleer</button>
                 </div>
             </div>
 

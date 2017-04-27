@@ -45,6 +45,7 @@ body{
 
     margin-top: 30px;
     font-weight: 200;
+    font-size: 1em;
     color: darkgrey;
 }
 
@@ -103,20 +104,39 @@ body{
 
 .btn-square{
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: #F3D370;
     margin:10px auto;
+    border: 2px dashed #E34A47;
     border-radius: 15px;
     box-sizing: border-box;
-    padding-top: 25px;
+    margin-top: 50px;
+    padding-top: 20px;
     text-align: center;
 }
 
 .btn-square p{
     color: white;
     font-size: 3em;
-    font-weight: bold;
+    font-weight: 500;
+
+}
+
+#btn-ja, #btn-nee {
+
+    background-color: #F3D370 ;
+    color: #E34A47;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 5%;
+    border-radius: 40px;
+    border: none;
+
 }
 
 .modal-header, .modal-footer{
@@ -132,26 +152,50 @@ body{
     flex-wrap: wrap;
 }
 
+.modal-title {
+
+    text-align: center;
+}
+
+.modal-body p {
+
+    text-align: center;
+}
+
 #kiesVak .modal-body input[type=radio]{display: none;}
 
 #kiesVak .modal-body input[type=radio] + label {
     display: block;
-    width: 65px;
-    height: 65px;
-    background-color: #F3D370;
+    width: 50px;
+    height: 50px;
+    background-color: #f7e19f;
     border-radius: 10px;
     color: white;
     box-sizing: border-box;
     margin:10px;
     text-align: center;
     padding: 15px;
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-#kiesVak .modal-body input[type=radio]:checked + label {
-    background-color: #f7e19f;
+#vak-submit {
+
+    background-color: #E34A47;
+    color: white;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 20px;
+    padding: 3%;
+    border-radius: 10px;
 }
+
+#kiesVak .modal-body input[type=radio]:checked + label {
+    background-color: #F3D370;
+    border: 2px dashed #E34A47;
+}
+
+
 
 
 
