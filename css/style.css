@@ -5,10 +5,14 @@ RODE KLEUR : #E34A47
 
  */
 
+@font-face {
+   font-family: 'The Bold Font';
+    src: url(../font/theboldfont.ttf);
+}
 
 body{
     background-color: gainsboro;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .container{
@@ -22,10 +26,53 @@ body{
 
 .content{
     display: block;
-    width:100%;
+    width:80%;
+    margin-left: 10%;
     height:80vh;
     background-color: white;
     text-align: center;
+}
+
+.content h1 {
+
+    font-family: 'The Bold Font', sans-serif;
+    font-size: 1.8em;
+    color: #E34A47;
+    padding-top: 50px;
+}
+
+.content p {
+
+    margin-top: 30px;
+    font-weight: 200;
+    color: darkgrey;
+}
+
+.content p span {
+
+    font-weight: 400;
+    color: #E34A47;
+}
+
+.buttonsVak {
+    margin-top: 50px;
+}
+
+#buttonVak {
+
+    background-color: #F3D370 ;
+    width: 70%;
+    padding: 5%;
+    margin-left: 10%;
+    margin-top: 30px;
+    border: 2px dashed #E34A47;
+    border-radius: 10px;
+}
+
+#buttonVak a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
 }
 
 .red-banner{
@@ -47,8 +94,11 @@ body{
     margin-left: auto;
     margin-right: auto;
     top: 82vh;
-    border: 3px dashed #F3D370;
-    box-sizing: border-box;
+}
+
+.red-banner .logo img {
+    width:70%;
+    margin-left: 15%;
 }
 
 .btn-square{

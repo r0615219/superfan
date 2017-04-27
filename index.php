@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -39,19 +41,31 @@
 
     <div class="content">
 
-        <h1>Welkom</h1>
+        <h1>W e l k o m !</h1>
 
-        <p>Connecteer met jouw supportersvak via QR-code of ...</p>
+        <p>Connecteer met jouw supportersvak via QR-code of voer jouw vak handmatig in!</p>
 
         <!--<a href="#" class="connect">wifi</a>
 
         <p>of</p>-->
 
-        <a href="#" data-toggle="modal" data-target="#QRinfo">QR Code</a>
+        <div class="buttonsVak">
 
-        <p>of</p>
+        <div id="buttonVak">
 
-        <a href="#" data-toggle="modal" data-target="#kiesVak">handmatig</a>
+            <a href="#" data-toggle="modal" data-target="#QRinfo">QR Code</a>
+
+        </div>
+
+        <p><span>of</span></p>
+
+        <div id="buttonVak">
+
+        <a href="#" data-toggle="modal" data-target="#kiesVak">Handmatig</a>
+
+        </div>
+
+        </div>
 
     </div>
 
@@ -166,7 +180,7 @@
     </div>
 
     <div class="red-banner">
-        <div class="logo"></div>
+        <div class="logo"><img src="img/LogoSuperfan-01.png" alt="logo"></div>
     </div>
 
 </div>
