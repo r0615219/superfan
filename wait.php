@@ -5,32 +5,29 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+
     <title>Superfan</title>
 </head>
 <body>
 
-<div class="container">
-    <div class="red-banner"></div>
+<div class="container-wait">
 
-    <div class="content">
+        <h1>H e y !</h1>
 
-        <h1>Hey, jij daar!</h1>
+    <p>Fijn dat je zo goed supportert! </br>
+        Even geduld voor de volgende opdracht...</p>
 
-        <p>Fijn dat je mee doet</p>
-
-        <p>Even geduld voor de volgende opdracht...</p>
-
-        <div>Image beertje</div>
+        <div class="logo"><img src="img/LogoSuperfan-01.png" alt="logo"></div>
 
 
 
-    </div>
 
-    <div class="red-banner">
-        <div class="logo"></div>
-    </div>
+
 </div>
 
 </body>
