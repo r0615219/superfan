@@ -475,6 +475,25 @@ input[type=checkbox] {
 
 @media screen and (min-width: 760px) {
 
+    .voorkeuren .checkboxSlide {
+
+        margin-left: 50%;
+        margin-top: 50px;
+        width: 80px;
+        height: 20px;
+    }
+
+    .voorkeuren .checkboxSlide label {
+
+        margin-top: -73px;
+        width:40px;
+        height: 20px;
+    }
+
+    .checkboxSlide input[type=checkbox]:checked + label {
+        left: 40px;
+    }
+
     .voorkeuren #checkboxSlide {
 
         margin-left: 50%;
@@ -482,10 +501,12 @@ input[type=checkbox] {
 
     .submitBtns  {
 
-        margin-top: 80px;
+        margin-top: 50px;
         font-size: 1.2em;
 
     }
+
+
 
 
 
