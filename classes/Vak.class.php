@@ -6,13 +6,6 @@
         private $m_sVak;
         private $m_sMACadres;
 
-        //voorkeuren
-        private $m_bZingen;
-        private $m_bWave;
-        private $m_bSpringen;
-        private $m_bPintje;
-        private $m_bKlappen;
-
         public function __set($p_sProperty, $p_vValue)
         {
             switch ($p_sProperty) {
@@ -24,22 +17,6 @@
                     break;
                 case 'MACadres':
                     $this->m_sMACadres = $p_vValue;
-                    break;
-                //voorkeuren
-                case 'Zingen':
-                    $this->m_bZingen = $p_vValue;
-                    break;
-                case 'Wave':
-                    $this->m_bWave = $p_vValue;
-                    break;
-                case 'Springen':
-                    $this->m_bSpringen = $p_vValue;
-                    break;
-                case 'Pintje':
-                    $this->m_bPintje = $p_vValue;
-                    break;
-                case 'Klappen':
-                    $this->m_bKlappen = $p_vValue;
                     break;
             }
         }
@@ -55,22 +32,6 @@
                     break;
                 case 'MACadres':
                     return $this->m_sMACadres;
-                    break;
-                //voorkeuren
-                case 'Zingen':
-                    return $this->m_bZingen;
-                    break;
-                case 'Wave':
-                    return $this->m_bWave;
-                    break;
-                case 'Springen':
-                    return $this->m_bSpringen;
-                    break;
-                case 'Pintje':
-                    return $this->m_bPintje;
-                    break;
-                case 'Klappen':
-                    return $this->m_bKlappen;
                     break;
             }
             return true;

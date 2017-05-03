@@ -6,11 +6,45 @@
         include_once("classes/" . $class . ".class.php");
     });
 
-    if(isset($_POST['ja'])){
-        //haal alle checked values op
+    try{
+        if(isset($_POST['ja'])){
+            $voorkeurenUser = new Voorkeuren();
 
-        //in database steken
-        //linken aan id?
+            if(isset($_POST['zingen'])){
+                $voorkeurenUser->Zingen = 1;
+            } else {
+                $voorkeurenUser->Zingen = 0;
+            }
+
+            if(isset($_POST['wave'])){
+                $voorkeurenUser->Wave = 1;
+            } else {
+                $voorkeurenUser->Wave = 0;
+            }
+
+            if(isset($_POST['springen'])){
+                $voorkeurenUser->Springen = 1;
+            } else {
+                $voorkeurenUser->Springen = 0;
+            }
+
+            if(isset($_POST['pintje'])){
+                $voorkeurenUser->Pintje = 1;
+            } else {
+                $voorkeurenUser->Pintje = 0;
+            }
+
+            if(isset($_POST['klappen'])){
+                $voorkeurenUser->Klappen = 1;
+            } else {
+                $voorkeurenUser->Klappen = 0;
+            }
+
+            $voorkeurenUser->saveVoorkeuren();
+            header('Location: wait.php');
+        }
+    } catch(Exception $e){
+        $error = $e->getMessage();
     }
 
 ?>
@@ -36,6 +70,8 @@
     <div class="red-banner"></div>
 
     <div class="content">
+
+        <?php if(!empty($error)){ echo '<p>'.$error.'</p>'; } ?>
 
         <h1>D e e l n e m e n <br> a a n . . .</h1>
 
@@ -90,11 +126,7 @@
 
             <div class="submitBtns">
 
-            <form action="" method="post">
-
                 <button type="submit" name="ja" id="btn-ja">Ready to go!</button>
-
-            </form>
 
             </div>
 
