@@ -59,7 +59,7 @@ body{
     margin-top: 50px;
 }
 
-#buttonVak {
+.buttonVak {
 
     background-color: #F3D370 ;
     width: 70%;
@@ -70,7 +70,7 @@ body{
     border-radius: 10px;
 }
 
-#buttonVak a {
+a.a-buttonVak {
     text-decoration: none;
     color: white;
     font-size: 1em;
@@ -169,7 +169,7 @@ body{
         margin-top: 80px;
     }
 
-    #buttonVak a {
+    a.a-buttonVak {
         font-size: 1.8em;
     }
 

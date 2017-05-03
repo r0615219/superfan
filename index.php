@@ -51,19 +51,15 @@
 
         <div class="buttonsVak">
 
-        <div id="buttonVak">
-
-            <a href="#" data-toggle="modal" data-target="#QRinfo">QR Code</a>
-
-        </div>
+        <a class="a-buttonVak" href="#" data-toggle="modal" data-target="#QRinfo">
+            <div class="buttonVak">QR Code</div>
+        </a>
 
         <p><span>of</span></p>
 
-        <div id="buttonVak">
-
-        <a href="#" data-toggle="modal" data-target="#kiesVak">Handmatig</a>
-
-        </div>
+        <a class="a-buttonVak" href="#" data-toggle="modal" data-target="#kiesVak">
+            <div class="buttonVak">Handmatig</div>
+        </a>
 
         </div>
 
