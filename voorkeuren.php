@@ -48,40 +48,40 @@
 
                 <label for="zingen" id="btn">Clublied zingen</label>
 
-                <div id="checkboxSlide">
-                    <input type="checkbox" id="checkboxSlideInput" name="zingen" />
-                    <label for="checkboxSlideInput"></label>
+                <div class="checkboxSlide">
+                    <input type="checkbox" id="checkboxSlideZingen" name="zingen" checked />
+                    <label for="checkboxSlideZingen"></label>
                 </div>
 
                 <label for="wave" id="btn">Wave starten</label>
 
-                <div id="checkboxSlide">
-                    <input type="checkbox" id="checkboxSlideInput" name="wave" />
-                    <label for="checkboxSlideInput"></label>
+                <div class="checkboxSlide">
+                    <input type="checkbox" id="checkboxSlideWave" name="wave" checked />
+                    <label for="checkboxSlideWave"></label>
                 </div>
 
 
                 <label for="springen" id="btn">Springen</label>
 
-                <div id="checkboxSlide">
-                    <input type="checkbox" id="checkboxSlideInput" name="springen" />
-                    <label for="checkboxSlideInput"></label>
+                <div class="checkboxSlide">
+                    <input type="checkbox" id="checkboxSlideSpringen" name="springen" checked />
+                    <label for="checkboxSlideSpringen"></label>
                 </div>
 
 
                 <label for="drinken" id="btn">Pintje drinken</label>
 
-                <div id="checkboxSlide">
-                    <input type="checkbox" id="checkboxSlideInput" name="pintje" />
-                    <label for="checkboxSlideInput"></label>
+                <div class="checkboxSlide">
+                    <input type="checkbox" id="checkboxSlidePintje" name="pintje" checked />
+                    <label for="checkboxSlidePintje"></label>
                 </div>
 
 
                 <label for="klappen" id="btn">Klappen</label>
 
-                <div id="checkboxSlide">
-                    <input type="checkbox" id="checkboxSlideInput" name="klappen" />
-                    <label for="checkboxSlideInput"></label>
+                <div class="checkboxSlide">
+                    <input type="checkbox" id="checkboxSlideKlappen" name="klappen" checked />
+                    <label for="checkboxSlideKlappen"></label>
                 </div>
 
             </div>

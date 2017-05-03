@@ -7,7 +7,7 @@ RODE KLEUR : #E34A47
 
 @font-face {
    font-family: 'The Bold Font';
-    src: url(../font/theboldfont.ttf);
+    src: url('../font/theboldfont.ttf');
 }
 
 body{
@@ -295,7 +295,7 @@ input[type=checkbox] {
     visibility: hidden;
 }
 
-#checkboxSlide {
+.checkboxSlide {
     width: 40px;
     height: 10px;
     background: white;
@@ -306,7 +306,7 @@ input[type=checkbox] {
     position: relative;
 }
 
-#checkboxSlide:after {
+.checkboxSlide:after {
     position: absolute;
     left: 13px;
     height: 2px;
@@ -314,7 +314,7 @@ input[type=checkbox] {
 }
 
 
-#checkboxSlide:before {
+.checkboxSlide:before {
     position: absolute;
     top: 12px;
     left: 84px;
@@ -322,7 +322,7 @@ input[type=checkbox] {
     color: #E34A47 ;
 }
 
-#checkboxSlide label {
+.checkboxSlide label {
     display: block;
     width: 20px;
     height: 10px;
@@ -338,7 +338,7 @@ input[type=checkbox] {
 }
 
 
-#checkboxSlide input[type=checkbox]:checked + label {
+.checkboxSlide input[type=checkbox]:checked + label {
     left: 20px;
     background: #F3D370;
 }
@@ -356,7 +356,7 @@ input[type=checkbox] {
         margin-top: 50px;
     }
 
-    .voorkeuren #checkboxSlide {
+    .voorkeuren .checkboxSlide {
 
         margin-left: 30%;
     }
@@ -384,25 +384,76 @@ input[type=checkbox] {
     }
 
 
-    .voorkeuren #checkboxSlide {
-
+    .voorkeuren #checkboxSlideZingen {
         width: 80px;
         height: 20px;
         margin-top: 50px;
         margin-left: 40%;
     }
-
-
-    #checkboxSlide label {
+    #checkboxSlideZingen label {
         width: 40px;
         height: 20px;
-
     }
-
-    #checkboxSlide input[type=checkbox]:checked + label {
+    #checkboxSlideZingen input[type=checkbox]:checked + label {
         left: 40px;
-
     }
+
+    .voorkeuren #checkboxSlideWave {
+        width: 80px;
+        height: 20px;
+        margin-top: 50px;
+        margin-left: 60%;
+    }
+    #checkboxSlideWave label {
+        width: 40px;
+        height: 20px;
+    }
+    #checkboxSlideWave input[type=checkbox]:checked + label {
+        left: 40px;
+    }
+
+    .voorkeuren #checkboxSlideSpringen {
+        width: 80px;
+        height: 20px;
+        margin-top: 50px;
+        margin-left: 60%;
+    }
+    #checkboxSlideSpringen label {
+        width: 40px;
+        height: 20px;
+    }
+    #checkboxSlideSpringen input[type=checkbox]:checked + label {
+        left: 40px;
+    }
+
+    .voorkeuren #checkboxSlidePintje {
+        width: 80px;
+        height: 20px;
+        margin-top: 50px;
+        margin-left: 60%;
+    }
+    #checkboxSlidePintje label {
+        width: 40px;
+        height: 20px;
+    }
+    #checkboxSlidePintje input[type=checkbox]:checked + label {
+        left: 40px;
+    }
+
+    .voorkeuren #checkboxSlideKlappen {
+        width: 80px;
+        height: 20px;
+        margin-top: 50px;
+        margin-left: 60%;
+    }
+    #checkboxSlideKlappen label {
+        width: 40px;
+        height: 20px;
+    }
+    #checkboxSlideKlappen input[type=checkbox]:checked + label {
+        left: 40px;
+    }
+
 
     .submitBtns  {
 
