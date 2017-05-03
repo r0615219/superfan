@@ -52,6 +52,8 @@
 
         <div class="btn-square"><p><?php echo $_SESSION['vak']; ?></p></div>
 
+        <div class="btns">
+
         <form action="" method="post">
 
             <button type="submit" name="ja" id="btn-ja">V</button>
@@ -59,6 +61,8 @@
             <button type="submit" name="nee" id="btn-nee">X</button>
 
         </form>
+
+        </div>
 
 
     </div>
