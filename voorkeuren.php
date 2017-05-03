@@ -41,18 +41,18 @@
         <p>Laat weten welke opdrachten je wil uitvoeren.</p>
 
         <form action="" method="post">
-            
+
             <div class="voorkeuren">
 
 
-                <label for="zingen" class="btn">Clublied zingen</label>
+                <label for="zingen" id="btn">Clublied zingen</label>
 
                 <div id="checkboxSlide">
                     <input type="checkbox" id="checkboxSlideInput" name="zingen" />
                     <label for="checkboxSlideInput"></label>
                 </div>
 
-                <label for="wave" class="btn">Wave starten</label>
+                <label for="wave" id="btn">Wave starten</label>
 
                 <div id="checkboxSlide">
                     <input type="checkbox" id="checkboxSlideInput" name="wave" />
@@ -60,7 +60,7 @@
                 </div>
 
 
-                <label for="springen" class="btn">Springen</label>
+                <label for="springen" id="btn">Springen</label>
 
                 <div id="checkboxSlide">
                     <input type="checkbox" id="checkboxSlideInput" name="springen" />
@@ -68,7 +68,7 @@
                 </div>
 
 
-                <label for="drinken" class="btn">Pintje drinken</label>
+                <label for="drinken" id="btn">Pintje drinken</label>
 
                 <div id="checkboxSlide">
                     <input type="checkbox" id="checkboxSlideInput" name="pintje" />
@@ -76,7 +76,7 @@
                 </div>
 
 
-                <label for="klappen" class="btn">Klappen</label>
+                <label for="klappen" id="btn">Klappen</label>
 
                 <div id="checkboxSlide">
                     <input type="checkbox" id="checkboxSlideInput" name="klappen" />
@@ -91,9 +91,7 @@
 
             <form action="" method="post">
 
-                <button type="submit" name="ja" id="btn-ja">V</button>
-
-                <button type="submit" name="nee" id="btn-nee">X</button>
+                <button type="submit" name="ja" id="btn-ja">Ready to go!</button>
 
             </form>
 
