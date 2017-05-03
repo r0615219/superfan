@@ -44,45 +44,50 @@
             
             <div class="voorkeuren">
 
+
                 <label for="zingen" class="btn">Clublied zingen</label>
 
-                <div class="checkboxSlide">
-                    <input type="checkbox" id="checkboxSlideInput" name="" />
+                <div id="checkboxSlide">
+                    <input type="checkbox" id="checkboxSlideInput" name="zingen" />
                     <label for="checkboxSlideInput"></label>
                 </div>
 
                 <label for="wave" class="btn">Wave starten</label>
 
-                <div class="checkboxSlide">
-                    <input type="checkbox" id="checkboxSlideInput" name="" />
+                <div id="checkboxSlide">
+                    <input type="checkbox" id="checkboxSlideInput" name="wave" />
                     <label for="checkboxSlideInput"></label>
                 </div>
 
 
                 <label for="springen" class="btn">Springen</label>
 
-                <div class="checkboxSlide">
-                    <input type="checkbox" id="checkboxSlideInput" name="" />
+                <div id="checkboxSlide">
+                    <input type="checkbox" id="checkboxSlideInput" name="springen" />
                     <label for="checkboxSlideInput"></label>
                 </div>
 
 
                 <label for="drinken" class="btn">Pintje drinken</label>
 
-                <div class="checkboxSlide">
-                    <input type="checkbox" id="checkboxSlideInput" name="" />
+                <div id="checkboxSlide">
+                    <input type="checkbox" id="checkboxSlideInput" name="pintje" />
                     <label for="checkboxSlideInput"></label>
                 </div>
 
 
                 <label for="klappen" class="btn">Klappen</label>
 
-                <div class="checkboxSlide">
-                    <input type="checkbox" id="checkboxSlideInput" name="" />
+                <div id="checkboxSlide">
+                    <input type="checkbox" id="checkboxSlideInput" name="klappen" />
                     <label for="checkboxSlideInput"></label>
                 </div>
 
             </div>
+
+
+
+            <div class="submitBtns">
 
             <form action="" method="post">
 
@@ -91,7 +96,9 @@
                 <button type="submit" name="nee" id="btn-nee">X</button>
 
             </form>
-            
+
+            </div>
+
         </form>
 
         
