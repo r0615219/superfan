@@ -6,10 +6,11 @@
         include_once("classes/" . $class . ".class.php");
     });
 
-    if(isset($_POST['submit'])){
+    if(isset($_POST['ja'])){
         //haal alle checked values op
+
         //in database steken
-        //linken aan id? vak?
+        //linken aan id?
     }
 
 ?>
