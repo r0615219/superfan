@@ -15,6 +15,7 @@
     cursor: pointer;
     filter: alpha(opacity=50);
     opacity: .5;
+    outline: none;
 }
 button.close {
     -webkit-appearance: none;
@@ -22,6 +23,7 @@ button.close {
     cursor: pointer;
     background: transparent;
     border: 0;
+    outline: none;
 }
 .modal-open {
     overflow: hidden;

@@ -21,7 +21,7 @@ body{
     max-width: 850px;
     height: 100vh;
     background-color: white;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .content{
@@ -74,6 +74,7 @@ body{
     text-decoration: none;
     color: white;
     font-size: 1em;
+    outline: none;
 }
 
 .red-banner{
@@ -115,6 +116,7 @@ body{
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
+    outline: none;
 }
 
 .btn-square p{
@@ -138,7 +140,8 @@ body{
     border-radius: 40px;
     border: none;
     margin-top: -20px;
-
+    outline: none;
+    cursor: pointer;
 }
 
 .modal-header, .modal-footer{
@@ -265,6 +268,7 @@ body{
     margin-top: 20px;
     padding: 3%;
     border-radius: 10px;
+    outline: none;
 }
 
 #kiesVak .modal-body input[type=radio]:checked + label {
