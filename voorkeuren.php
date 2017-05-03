@@ -10,6 +10,8 @@
         if(isset($_POST['ja'])){
             $voorkeurenUser = new Voorkeuren();
 
+            $voorkeurenUser->user_id = $_SESSION['id'];
+
             if(isset($_POST['zingen'])){
                 $voorkeurenUser->Zingen = 1;
             } else {
@@ -39,6 +41,18 @@
             } else {
                 $voorkeurenUser->Klappen = 0;
             }
+
+            /*$voorkeurenUser->Zingen = $_POST['zingen'];
+            $voorkeurenUser->Wave = $_POST['wave'];
+            $voorkeurenUser->Springen = $_POST['springen'];
+            $voorkeurenUser->Pintje = $_POST['pintje'];
+            $voorkeurenUser->Klappen = $_POST['klappen'];*/
+
+            /*echo $voorkeurenUser->Zingen;
+            echo $voorkeurenUser->Wave;
+            echo $voorkeurenUser->Springen;
+            echo $voorkeurenUser->Pintje;
+            echo $voorkeurenUser->Klappen;*/
 
             $voorkeurenUser->saveVoorkeuren();
             header('Location: wait.php');

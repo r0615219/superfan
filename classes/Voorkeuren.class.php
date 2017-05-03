@@ -71,8 +71,8 @@
 
         public function saveVoorkeuren(){
             $conn = Db::getInstance();
-            $statement = $conn->prepare("INSERT INTO `supportersvoorkeuren`(`user_id`, `zingen`, `wave`, `springen`, `pintje`, `klappen`) VALUES (`:user_id`, `:zingen`, `:wave`, `:springen`, `:pintje`, `:klappen`)");
-            $statement->bindValue(":user_id", $_SESSION['id']);
+            $statement = $conn->prepare("INSERT INTO `supportersvoorkeuren`(`user_id`, `zingen`, `wave`, `springen`, `pintje`, `klappen`) VALUES ((:user_id), (:zingen), (:wave), (:springen), (:pintje), (:klappen));");
+            $statement->bindValue(":user_id", $this->m_iUser_id);
             $statement->bindValue(":zingen", $this->m_bZingen);
             $statement->bindValue(":wave", $this->m_bWave);
             $statement->bindValue(":springen", $this->m_bSpringen);

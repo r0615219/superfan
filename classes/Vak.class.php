@@ -39,7 +39,7 @@
 
         public function saveVak(){
             $conn = Db::getInstance();
-            $statement = $conn->prepare("INSERT INTO `supportersvakken`(`vak`, `MACadres`) VALUES (:vak, :MACadres)");
+            $statement = $conn->prepare("INSERT INTO `supportersvakken`(`vak`, `MACadres`) VALUES (:vak, :MACadres);");
             $statement->bindValue(":vak", $this->m_sVak);
             $statement->bindValue(":MACadres", $this->m_sMACadres);
             $res = $statement->execute();
