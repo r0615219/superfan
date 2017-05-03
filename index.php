@@ -1,15 +1,20 @@
 <?php
 
-//mac adres van gsm ook in databank steken
+    session_start();
 
     spl_autoload_register(function ($class) {
         include_once("classes/" . $class . ".class.php");
     });
 
     if(isset($_POST["vak-submit"])){
-        session_start();
         $_SESSION['vak'] = $_POST['vak'];
         header('Location: hier.php');
+    }
+
+    if(isset($_POST['mascotte-submit'])){
+        $mascotte = new Mascotte();
+        $mascotte->Password = $_POST['password'];
+        $mascotte->checkPassword();
     }
 
 ?>
@@ -26,6 +31,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="img/LogoSuperfan-01.png">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
 
@@ -166,7 +173,31 @@
     </div>
 
     <div class="red-banner">
-        <div class="logo"><img src="img/LogoSuperfan-01.png" alt="logo"></div>
+        <a href="#" class="logo" data-toggle="modal" data-target="#mascotte-login"><img src="img/LogoSuperfan-01.png" alt="logo"></a>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="mascotte-login" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Mascotte Login</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Info over de admin login. Lorem ipsum lalalalalala</p>
+                    <p>Nog meer lalalala</p>
+                    <form action="" method="post">
+                        <input type="password" id="password" name="password">
+                        <button type="submit" name="mascotte-submit" id="mascotte-submit">Log in</button>
+                    </form>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+
+        </div>
     </div>
 
 </div>
