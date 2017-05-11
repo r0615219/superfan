@@ -5,6 +5,10 @@
         include_once("classes/" . $class . ".class.php");
     });
 
+    if(empty($_SESSION['vak'])){
+        header('Location: index.php');
+    }
+
     try {
         if (isset($_POST["ja"])) {
             $supporter = new Vak();

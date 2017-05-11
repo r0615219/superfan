@@ -6,6 +6,10 @@
         include_once("classes/" . $class . ".class.php");
     });
 
+    if(empty($_SESSION['vak'])){
+        header('Location: index.php');
+    }
+
     try{
         if(isset($_POST['ja'])){
             $voorkeurenUser = new Voorkeuren();
@@ -41,18 +45,6 @@
             } else {
                 $voorkeurenUser->Klappen = 0;
             }
-
-            /*$voorkeurenUser->Zingen = $_POST['zingen'];
-            $voorkeurenUser->Wave = $_POST['wave'];
-            $voorkeurenUser->Springen = $_POST['springen'];
-            $voorkeurenUser->Pintje = $_POST['pintje'];
-            $voorkeurenUser->Klappen = $_POST['klappen'];*/
-
-            /*echo $voorkeurenUser->Zingen;
-            echo $voorkeurenUser->Wave;
-            echo $voorkeurenUser->Springen;
-            echo $voorkeurenUser->Pintje;
-            echo $voorkeurenUser->Klappen;*/
 
             $voorkeurenUser->saveVoorkeuren();
             header('Location: wait.php');
