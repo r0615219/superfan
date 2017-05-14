@@ -1,3 +1,15 @@
+<?php
+    session_start();
+
+    spl_autoload_register(function ($class) {
+        include_once("classes/" . $class . ".class.php");
+    });
+
+    if(empty($_SESSION['vak'])){
+        header('Location: index.php');
+    }
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
