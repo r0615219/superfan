@@ -36,9 +36,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="icon" href="img/LogoSuperfan-01.png">
+
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <title>Superfan</title>
 </head>
@@ -46,9 +52,9 @@
 <?php if(isset($error)){ echo $error; }; ?>
 
 <div class="container">
-    <div class="red-banner"></div>
+    <div class="red-banner header"></div>
 
-    <div class="content">
+    <div class="content content-fixed">
 
         <h1>C h e c k !</h1>
 
@@ -71,7 +77,7 @@
 
     </div>
 
-    <div class="red-banner">
+    <div class="red-banner footer">
         <div class="logo"><img src="img/LogoSuperfan-01.png" alt="logo"></div>
     </div>
 </div>
