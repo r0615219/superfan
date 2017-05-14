@@ -27,7 +27,7 @@ a:focus{
     display: block;
     min-width:300px;
     max-width: 850px;
-    height: 100vh;
+    min-height: 100vh;
     background-color: white;
     margin: 0 auto;
 }
@@ -36,7 +36,7 @@ a:focus{
     display: block;
     width:80%;
     margin-left: 10%;
-    height:80vh;
+    min-height:80vh;
     background-color: white;
     text-align: center;
 }
@@ -94,7 +94,6 @@ a.a-buttonVak {
 
 .red-banner .logo{
     display: block;
-    position: absolute;
     width: 100px;
     height: 100px;
     background-color: white;
@@ -103,7 +102,7 @@ a.a-buttonVak {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 82vh;
+    bottom: 2vh;
 }
 
 .red-banner .logo img {
@@ -239,7 +238,6 @@ a.a-buttonVak {
 }
 
 .modal-body p {
-
     text-align: center;
 }
 
@@ -563,17 +561,66 @@ input[type=checkbox] {
 
     width: 100%;
     -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 7s;
     -webkit-animation-iteration-count: infinite ;
 }
 
 @-webkit-keyframes fadeIn {
 
-    from {opacity: 0;}
-    to {opacity: 1;}
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
 
 }
 
+
+/* POP UP OPDRACHT */
+#opdracht .modal-body p, #opdracht .modal-body h1{
+    color: black;
+}
+
+
+/* RED BANNERS FIXED */
+
+.content-fixed{
+    position: relative;
+    padding-top: 5em;
+    padding-bottom: 15em;
+}
+
+.red-banner{
+    min-width:300px;
+    max-width: 850px;
+}
+
+.red-banner.header{
+    position: fixed;
+    z-index: 5;
+}
+
+.red-banner.footer{
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+}
+
+.red-banner.footer .logo{
+    position: fixed;
+    z-index: 10;
+}
+
+/* OPDRACHT TIMER */
+
+h1#opdracht-timer{
+    display: block;
+    position: fixed;
+    top: 40vh;
+    text-align: center;
+    font-size: 3em;
+    width:80%;
+    margin: 0 0 0 -40%;
+    left:50%;
+}
 
 
 

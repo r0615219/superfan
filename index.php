@@ -44,9 +44,9 @@
 <body>
 
 <div class="container">
-    <div class="red-banner"></div>
+    <div class="red-banner header"></div>
 
-    <div class="content">
+    <div class="content content-fixed">
 
         <h1>W e l k o m !</h1>
 
@@ -92,6 +92,10 @@
             </div>
 
         </div>
+    </div>
+
+    <div class="red-banner footer">
+        <a href="#" class="logo" data-toggle="modal" data-target="#mascotte-login"><img src="img/LogoSuperfan-01.png" alt="logo"></a>
     </div>
 
     <!-- Modal -->
@@ -170,10 +174,6 @@
             </div>
 
         </div>
-    </div>
-
-    <div class="red-banner">
-        <a href="#" class="logo" data-toggle="modal" data-target="#mascotte-login"><img src="img/LogoSuperfan-01.png" alt="logo"></a>
     </div>
 
     <!-- Modal -->
