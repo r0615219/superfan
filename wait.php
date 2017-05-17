@@ -60,19 +60,24 @@
                     <h4 class="modal-title">Opdracht</h4>
                 </div>
                 <div class="modal-body">
-                    <p>Samen met het hele stadion gaan we het clublied zingen!</p>
-                    <p>Heb je zin om mee te doen?</p>
-                    <h1 id="timer">30</h1>
 
-                    <img src="img/LogoSuperfan-01.png" alt="logo" style="width: 50px;">
+                    <h2 id="timer">30</h2>
+                    <h1> Zin om ... </h1>
+                    <p>uit volle borst mee te zingen met ons clublied?</p>
 
-                    <div class="btns">
+
+
+                    <img src="img/logozingen-02.png" id="logoOpdracht">
+                    <p><span>Maak een keuze!</span></p>
+
+
+                    <div class="btnsOpdracht">
 
                         <form action="" method="post">
 
-                            <button type="submit" name="ja" id="btn-ja">V</button>
+                            <button type="submit" name="ja" id="btn-ja">Ja</button>
 
-                            <button type="submit" name="nee" id="btn-nee" data-dismiss="modal">X</button>
+                            <button type="submit" name="nee" id="btn-nee" data-dismiss="modal">Nee</button>
 
                         </form>
 
