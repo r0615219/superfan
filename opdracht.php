@@ -5,9 +5,9 @@ spl_autoload_register(function ($class) {
     include_once("classes/" . $class . ".class.php");
 });
 
-if(empty($_SESSION['vak'])){
+/*if(empty($_SESSION['vak'])){
     header('Location: index.php');
-}
+}*/
 
 ?>
 
@@ -30,13 +30,27 @@ if(empty($_SESSION['vak'])){
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <script src="js/audiodisplay.js"></script>
+    <script src="js/recorderjs/recorder.js"></script>
+    <script src="js/recordOfficial.js"></script>
+
     <title>Superfan</title>
+
+    <style>
+        #wavedisplay{
+            margin: 50px auto;
+            border: 1px solid black;
+            /*width: 1024px;
+            height: 500px;*/
+        }
+    </style>
+
 </head>
 <body>
 <?php if(isset($error)){ echo $error; }; ?>
 
 <div class="container">
-    <div class="red-banner header"></div>
+    <div class="red-banner header"><h2 id="timerEnd">30</h2></div>
 
     <div class="content content-fixed">
 
@@ -105,6 +119,8 @@ if(empty($_SESSION['vak'])){
             Ter ere onzer dapperen <br>
             toe Malinwa vooruit!</p>
 
+        <canvas id="wavedisplay" width="1024" height="500"></canvas>
+
 
     </div>
 
@@ -116,7 +132,7 @@ if(empty($_SESSION['vak'])){
 </body>
 
 <script>
-        //TIMER OPDRACHT
+    //TIMER OPDRACHT
     var count=6;
 
     var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
@@ -125,6 +141,8 @@ if(empty($_SESSION['vak'])){
 
     var print;
 
+    var recordEnd = false;
+
     function timer()
     {
         count=count-1;
@@ -132,6 +150,8 @@ if(empty($_SESSION['vak'])){
         {
             clearInterval(counter);
             output.hide();
+            recordEnd = true;
+            toggleRecording();
             return;
         }
 
@@ -142,6 +162,27 @@ if(empty($_SESSION['vak'])){
         }
 
         output.html(print);
+    }
+
+    //TIMER EINDE OPDRACHT
+    var countEnd=30;
+
+    var counterEnd=setInterval(timerEnd, 1000); //1000 will  run it every 1 second
+
+    var outputEnd =  $('#timerEnd');
+
+    function timerEnd()
+    {
+        countEnd=countEnd-1;
+        if (countEnd < 0)
+        {
+            clearInterval(counterEnd);
+            recordEnd = false;
+            toggleRecording();
+            return;
+        }
+
+        outputEnd.html(countEnd);
     }
 </script>
 
