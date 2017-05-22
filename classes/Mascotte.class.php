@@ -29,7 +29,7 @@
             if($this->Password == $password){
                 echo 'you can log in';
             } else {
-                echo 'oops, error';
+                echo 'Incorrect Password.';
             }
 
         }
