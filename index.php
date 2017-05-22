@@ -191,7 +191,8 @@
                     <p>Nog meer lalalala</p>
                     <form action="" method="post">
                         <input type="password" id="password" name="password">
-                        <button type="submit" name="mascotte-submit" id="mascotte-submit">Log in</button>
+                        <!--<button type="submit" name="mascotte-submit" id="mascotte-submit">Log in</button>-->
+                        <button id="mascotte-submit" type="button" class="close" data-dismiss="modal">&times;</button>
                     </form>
                 </div>
                 <div class="modal-footer"></div>
