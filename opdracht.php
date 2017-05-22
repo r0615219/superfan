@@ -5,9 +5,9 @@ spl_autoload_register(function ($class) {
     include_once("classes/" . $class . ".class.php");
 });
 
-/*if(empty($_SESSION['vak'])){
+if(empty($_SESSION['vak'])){
     header('Location: index.php');
-}*/
+}
 
 ?>
 
@@ -38,10 +38,12 @@ spl_autoload_register(function ($class) {
 
     <style>
         #wavedisplay{
+            display: block;
             margin: 50px auto;
             border: 1px solid black;
-            /*width: 1024px;
-            height: 500px;*/
+            min-width: 200px;
+            max-width: 500px;
+            height: 250px;
         }
     </style>
 
@@ -119,13 +121,39 @@ spl_autoload_register(function ($class) {
             Ter ere onzer dapperen <br>
             toe Malinwa vooruit!</p>
 
-        <canvas id="wavedisplay" width="1024" height="500"></canvas>
-
 
     </div>
 
     <div class="red-banner footer">
         <div class="logo"><img src="img/LogoSuperfan-01.png" alt="logo"></div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="decibels" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+               <!-- <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                <h4 class="modal-title">Decibels</h4>
+            </div>
+            <div class="modal-body">
+
+                <h1>Wat fijn dat je hebt meegezongen!</h1>
+
+                <!--<canvas id="wavedisplay" width="500" height="200"></canvas>-->
+
+                <canvas id="wavedisplay"></canvas>
+
+                <a href="wait.php">Yes!</a>
+
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+
     </div>
 </div>
 
@@ -179,6 +207,7 @@ spl_autoload_register(function ($class) {
             clearInterval(counterEnd);
             recordEnd = false;
             toggleRecording();
+            $('#decibels').modal('show');
             return;
         }
 

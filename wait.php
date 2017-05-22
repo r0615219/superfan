@@ -70,7 +70,7 @@
                     <img src="img/logozingen-02.png" id="logoOpdracht">
                     <p><span>Maak een keuze!</span></p>
 
-
+                    
                     <div class="btnsOpdracht">
 
                         <form action="" method="post">
@@ -96,6 +96,9 @@
 </body>
 
 <script>
+   // var s = new Date().getSeconds();
+    //$('#outputseconds').html(s);
+
         //OPEN MODAL
         window.onload = function(){
 
