@@ -30,13 +30,29 @@ if(empty($_SESSION['vak'])){
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <script src="js/audiodisplay.js"></script>
+    <script src="js/recorderjs/recorder.js"></script>
+    <script src="js/recordOfficial.js"></script>
+
     <title>Superfan</title>
+
+    <style>
+        #wavedisplay{
+            display: block;
+            margin: 50px auto;
+            border: 1px solid black;
+            min-width: 200px;
+            max-width: 500px;
+            height: 250px;
+        }
+    </style>
+
 </head>
 <body>
 <?php if(isset($error)){ echo $error; }; ?>
 
 <div class="container">
-    <div class="red-banner header"></div>
+    <div class="red-banner header"><h2 id="timerEnd">30</h2></div>
 
     <div class="content content-fixed">
 
@@ -113,10 +129,38 @@ if(empty($_SESSION['vak'])){
     </div>
 </div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="decibels" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+               <!-- <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                <h4 class="modal-title">Decibels</h4>
+            </div>
+            <div class="modal-body">
+
+                <h1>Wat fijn dat je hebt meegezongen!</h1>
+
+                <!--<canvas id="wavedisplay" width="500" height="200"></canvas>-->
+
+                <canvas id="wavedisplay"></canvas>
+
+                <a href="wait.php">Yes!</a>
+
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+
+    </div>
+</div>
+
 </body>
 
 <script>
-        //TIMER OPDRACHT
+    //TIMER OPDRACHT
     var count=6;
 
     var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
@@ -125,6 +169,8 @@ if(empty($_SESSION['vak'])){
 
     var print;
 
+    var recordEnd = false;
+
     function timer()
     {
         count=count-1;
@@ -132,6 +178,8 @@ if(empty($_SESSION['vak'])){
         {
             clearInterval(counter);
             output.hide();
+            recordEnd = true;
+            toggleRecording();
             return;
         }
 
@@ -142,6 +190,28 @@ if(empty($_SESSION['vak'])){
         }
 
         output.html(print);
+    }
+
+    //TIMER EINDE OPDRACHT
+    var countEnd=30;
+
+    var counterEnd=setInterval(timerEnd, 1000); //1000 will  run it every 1 second
+
+    var outputEnd =  $('#timerEnd');
+
+    function timerEnd()
+    {
+        countEnd=countEnd-1;
+        if (countEnd < 0)
+        {
+            clearInterval(counterEnd);
+            recordEnd = false;
+            toggleRecording();
+            $('#decibels').modal('show');
+            return;
+        }
+
+        outputEnd.html(countEnd);
     }
 </script>
 

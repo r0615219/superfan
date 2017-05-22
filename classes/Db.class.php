@@ -8,7 +8,7 @@ abstract class Db
         if (isset(self::$conn)) {
             return self::$conn;
         } else {
-            self::$conn = new PDO('mysql:host=localhost; dbname=superfan', 'root', 'root');
+            self::$conn = new PDO('mysql:host=localhost; dbname=superfan', 'root', '');
             return self::$conn;
         }
     }
