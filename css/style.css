@@ -240,6 +240,19 @@ a.a-buttonVak {
     text-align: center;
 }
 
+#stadionimg {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#stadionimg img {
+
+    width: 80%;
+    height: 80%;
+}
+
 
 
 @media screen and (min-width: 760px) {

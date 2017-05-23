@@ -171,6 +171,9 @@
                         <button type="submit" name="vak-submit" id="vak-submit">Volgende</button>
                     </form>
                 </div>
+                <div id="stadionimg">
+                <img src="img/stadionKV.png" alt="KV Mechelen stadion">
+                </div>
                 <div class="modal-footer">
                 </div>
             </div>
