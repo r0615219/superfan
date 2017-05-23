@@ -87,8 +87,6 @@
 
         <h1>D e e l n e m e n <br> a a n . . .</h1>
 
-        <p>Laat weten welke opdrachten je wil uitvoeren.</p>
-
         <form action="" method="post">
 
             <div class="voorkeuren">

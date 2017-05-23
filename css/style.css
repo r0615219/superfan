@@ -287,9 +287,9 @@ a.a-buttonVak {
 
     .btn-square{
 
-        width: 200px;
-        height: 200px;
-        border: 4px dashed #E34A47;
+        width: 150px;
+        height: 150px;
+        border: 2px dashed #E34A47;
         border-radius: 15px;
         margin-top: 70px;
     }
@@ -297,32 +297,32 @@ a.a-buttonVak {
     .btn-square p{
 
         padding-top: 20px;
-        font-size: 4em;
+        font-size: 2em;
 
     }
 
     .btnsCheck {
 
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .btnsCheck #btn-ja {
 
         font-size: 1.5em;
 
-        padding-left: 8%;
-        padding-right: 8%;
-        padding-top: 6%;
-        padding-bottom: 6%;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
 
     .btnsCheck #btn-nee {
-       font-size: 1.5em;
+        font-size: 1.5em;
 
-       padding-left: 8%;
-       padding-right: 8%;
-       padding-top: 6%;
-       padding-bottom: 6%;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 3%;
+        padding-bottom: 3%;
 
    }
 
@@ -600,6 +600,7 @@ input[type=checkbox] {
 }
 
 @media screen and (min-width: 760px) {
+
 
     .voorkeuren .checkboxSlide {
 
