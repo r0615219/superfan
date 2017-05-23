@@ -59,13 +59,15 @@
         <div class="buttonsVak">
 
         <a class="a-buttonVak" href="#" data-toggle="modal" data-target="#QRinfo">
-            <div class="buttonVak">QR Code</div>
+            <!--<div class="buttonVak">QR Code</div>-->
+            <div class="buttonVak"><img src="img/suprfan_login_icons-01.png" alt="QR code"></div>
         </a>
 
-        <p><span>of</span></p>
+        <div class="buttonVakTekst"><p><span>of</span></p></div>
 
         <a class="a-buttonVak" href="#" data-toggle="modal" data-target="#kiesVak">
-            <div class="buttonVak">Handmatig</div>
+            <!--<div class="buttonVak">Handmatig</div>-->
+            <div class="buttonVak"><img src="img/suprfan_login_icons-02.png" alt="handmatig"></div>
         </a>
 
         </div>
@@ -112,7 +114,7 @@
                     <p>Kies een supportersvak</p>
                     <form action="" method="post">
                         <div class="vakken">
-                            <input type="radio" id="A" value="A" name="vak">
+                            <input type="radio" id="A" value="A" name="vak" checked>
                             <label for="A" class="btn">A</label>
 
                             <input type="radio" id="B" value="B" name="vak">
