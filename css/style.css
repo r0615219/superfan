@@ -46,7 +46,7 @@ a:focus{
     font-family: 'The Bold Font', sans-serif;
     font-size: 1.8em;
     color: #E34A47;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .content p {
@@ -183,7 +183,7 @@ a.a-buttonVak {
 
 }
 
-#btn-ja, #btn-nee {
+.btnsCheck #btn-ja {
 
     background-color: #F3D370 ;
     color: #E34A47;
@@ -201,6 +201,23 @@ a.a-buttonVak {
     cursor: pointer;
 }
 
+.btnsCheck #btn-nee {
+
+    background-color: #F3D370 ;
+    color: #E34A47;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin: 5%;
+    border-radius: 40px;
+    border: none;
+    margin-top: -20px;
+    outline: none;
+    cursor: pointer;
+}
 .modal-header, .modal-footer{
     background-color: #E34A47;
     color: white;
@@ -223,8 +240,8 @@ a.a-buttonVak {
     }
 
     .buttonVak {
-        width: 15vw;
-        height: 15vw;
+        width: 10vw;
+        height: 10vw;
         margin: 10px 5px;
     }
 
@@ -267,12 +284,12 @@ a.a-buttonVak {
 
     }
 
-    .btns {
+    .btnsCheck {
 
         margin-top: 100px;
     }
 
-    #btn-ja, #btn-nee {
+    .btnsCheck #btn-ja {
 
         font-size: 1.5em;
 
@@ -281,6 +298,16 @@ a.a-buttonVak {
         padding-top: 6%;
         padding-bottom: 6%;
     }
+
+    .btnsCheck #btn-nee {
+       font-size: 1.5em;
+
+       padding-left: 8%;
+       padding-right: 8%;
+       padding-top: 6%;
+       padding-bottom: 6%;
+
+   }
 
 
 }
@@ -419,6 +446,25 @@ input[type=checkbox] {
     font-size: 0.5em;
 }
 
+.submitBtns #btn-go {
+
+    background-color: #F3D370 ;
+    color: #E34A47;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin: 5%;
+    border-radius: 40px;
+    border: none;
+    margin-top: -20px;
+    outline: none;
+    cursor: pointer;
+
+}
+
 @media screen and (min-width: 375px) {
 
     .voorkeuren {
@@ -532,14 +578,7 @@ input[type=checkbox] {
 
     }
 
-    #btn-ja, #btn-nee {
 
-        padding-left: 6%;
-        padding-right: 6%;
-        padding-top: 4%;
-        padding-bottom: 4%;
-
-    }
 
 }
 
@@ -684,14 +723,47 @@ input[type=checkbox] {
     margin-top: -50px;
 }
 
-.btnsOpdracht #btn-ja, #btn-nee {
+.btnsOpdracht {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btnsOpdracht #btn-ja {
 
     background-color: transparent;
     border: 2px dashed #F3D370 ;
     width: 100px;
     height: 100px;
     border-radius: 100px;
-    margin-top: 50px;
+    margin: 10px;
+    font-size: 1.2em;
+    color: #E34A47;
+}
+
+.btnsOpdracht #btn-ja:hover {
+
+    background-color: #F3D370 ;
+    color: white;
+}
+
+.btnsOpdracht  #btn-nee {
+    background-color: transparent;
+    border: 2px dashed #F3D370 ;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 10px;
+    font-size: 1.2em;
+    color: #E34A47;
+
+}
+
+.btnsOpdracht #btn-nee:hover {
+
+    background-color: #F3D370 ;
+    color: white;
 }
 
 #opdracht #logoOpdracht {
@@ -710,6 +782,31 @@ input[type=checkbox] {
     border-radius: 150px;
     width: 7%;
     padding: 3%;
+}
+
+#timerEnd {
+    font-size: 1em;
+    color: white;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 150px;
+    width: 6%;
+    padding: 3%;
+    margin-left: 10px;
+
+}
+
+#opdracht-timer {
+
+    index: 2;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 120px;
+    font-size: 3em;
+    text-align: center;
+    position: absolute;
+    color: #E34A47;
+
 }
 
 /* RED BANNERS FIXED */
@@ -741,6 +838,44 @@ input[type=checkbox] {
     z-index: 10;
 }
 
+/* RESULT SINGING */
+
+
+
+#wavedisplay {
+
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+#btn-sluit {
+
+    background-color: #F3D370;
+    text-decoration: none;
+    color: #E34A47;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 30%;
+    margin-left: 37%;
+    border-radius: 250px;
+    outline: none;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+#id {
+
+    text-align: center;
+}
+
+
+
+
 @media screen and (min-width: 760px) {
 
     #opdracht .modal-body p, #opdracht .modal-body h1{
@@ -767,11 +902,16 @@ input[type=checkbox] {
         margin-top: -50px;
     }
 
-    .btnsOpdracht #btn-ja, #btn-nee {
+    .btnsOpdracht #btn-ja {
 
         width: 150px;
         height: 150px;
-        margin-left: 80px;
+    }
+
+    .btnsOpdracht #btn-nee {
+
+        width: 150px;
+        height: 150px;
     }
 
     #timer {
@@ -780,10 +920,21 @@ input[type=checkbox] {
         padding: 2%;
     }
 
+    #timerEnd {
+        width: 3%;
+        padding: 2%;
+
+    }
+
     .content-fixed{
         position: relative;
         padding-top: 5em;
         padding-bottom: 15em;
+    }
+
+    #id {
+
+        text-align: center;
     }
 
 }

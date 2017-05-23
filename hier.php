@@ -62,7 +62,7 @@
 
         <div class="btn-square"><p><?php echo $_SESSION['vak']; ?></p></div>
 
-        <div class="btns">
+        <div class="btnsCheck">
 
         <form action="" method="post">
 

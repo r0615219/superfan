@@ -58,7 +58,7 @@ if(empty($_SESSION['vak'])){
 
         <h1>Clublied</h1>
 
-        <h1 id="opdracht-timer">Klaar ?</h1>
+        <h1 id="opdracht-timer">Klaar?</h1>
 
         <p>Wie voegt zich bij de rangen <br>
             onzer supportersschaar <br>
@@ -142,13 +142,15 @@ if(empty($_SESSION['vak'])){
             </div>
             <div class="modal-body">
 
-                <h1>Wat fijn dat je hebt meegezongen!</h1>
+                <h1 id="#deci">Wauw! Wat een stem! Dankjewel om mee te zingen met ons clublied.</h1>
 
                 <!--<canvas id="wavedisplay" width="500" height="200"></canvas>-->
 
                 <canvas id="wavedisplay"></canvas>
 
-                <a href="wait.php">Yes!</a>
+                <div class="btnsCheck">
+                <a href="wait.php" id="btn-sluit">Yes!</a>
+                </div>
 
             </div>
             <div class="modal-footer"></div>

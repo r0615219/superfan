@@ -136,7 +136,7 @@
 
             <div class="submitBtns">
 
-                <button type="submit" name="ja" id="btn-ja">Ready to go!</button>
+                <button type="submit" name="ja" id="btn-go">Ready to go!</button>
 
             </div>
 
